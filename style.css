@@ -12,6 +12,9 @@ nav {
     justify-content: space-between;
     background: #1876f2;
     padding: 5px 5%;
+    position: sticky;
+    top:0;
+    z-index: 100;
 }
 .logo
 {
@@ -31,7 +34,7 @@ nav {
     width:28px;
     margin:0 15px;
 }
-.nav-user-icon{
+.nav-user-icon img{
     width:40px;
     border-radius: 50%;
     cursor: pointer;
@@ -60,3 +63,82 @@ nav {
     outline: none;
     border: 0;
 }
+.online
+{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    top:0;
+    right:0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+.left-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top:70px;
+    align-self: flex-start; 
+}
+.right-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top:70px;
+    align-self: flex-start;  
+}
+.main-content{
+    flex-basis: 47%;   
+}
+.imp-links a, .shortcut-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+.imp-links a img{
+    width: 25px;
+    margin-right: 15px;
+}
+.imp-links a:last-child{
+    color:#1876f2;
+} 
+.imp-links{
+    border-bottom: 1px solid #ccc;
+}
+.shortcut-links a img{
+    width:40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.shortcut-links p {
+    margin: 25px 0;
+    color: #626262;
+    font-weight: 500;
+}
+.sidebare-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;  
+}
+.sidebare-title h4{
+    font-weight: 600;
+    font-size: 16px;   
+}
+.sidebare-title a{
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 12px;
+}
+

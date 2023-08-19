@@ -1,8 +1,7 @@
 # FacebookP
 Socialbook app 
 # Project Name
-
-[Project Name] is a brief description of what your project does and its main features.
+FacebookP is a brief description of what your project does and its main features.
 
 ## Table of Contents
 
